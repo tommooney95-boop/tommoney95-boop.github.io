@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Momentum — Build habits. Track progress.</title>
+  <meta name="description" content="Momentum helps you build consistent habits with daily, weekly, and monthly goals, XP, and streaks." />
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(1200px 600px at 50% -10%, #1a1a3a, #0B0B17 60%);
+      color: #F7F7FA;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .wrap { max-width: 640px; padding: 56px 24px; text-align: center; }
+    .badge {
+      width: 64px; height: 64px; border-radius: 18px; margin: 0 auto 24px;
+      background: linear-gradient(145deg, #6366F1, #8B5CF6);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 32px; font-weight: 800; color: #fff;
+      box-shadow: 0 12px 40px rgba(99,102,241,.45);
+    }
+    h1 { font-size: 46px; margin: 0 0 10px; letter-spacing: .5px; }
+    .tag { color: #8B8BF5; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; font-size: 13px; }
+    p { color: #A8A8C0; font-size: 18px; line-height: 1.6; }
+    .links { margin-top: 32px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    a.btn {
+      display: inline-block; padding: 13px 22px; border-radius: 12px;
+      background: #6366F1; color: #fff; text-decoration: none; font-weight: 600;
+      transition: opacity .15s ease;
+    }
+    a.btn:hover { opacity: .9; }
+    a.ghost { background: transparent; border: 1px solid #2A2A45; color: #D7D7E8; }
+    footer { margin-top: 48px; color: #6B6B85; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="badge">M</div>
+    <div class="tag">Build habits. Track progress.</div>
+    <h1>Momentum</h1>
+    <p>Build consistent habits with daily, weekly, monthly, and yearly goals. Check in with one tap, earn XP, level up, and keep your streaks alive.</p>
+    <div class="links">
+      <a class="btn" href="./privacy.html">Privacy Policy</a>
+      <a class="ghost btn" href="mailto:pixelodessey@outlook.com">Contact</a>
+    </div>
+    <footer>© <span id="year"></span> Tom Mooney</footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
